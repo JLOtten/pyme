@@ -1,6 +1,20 @@
 # dev-c
 A full-stack team collaboration project with the Develop Carolina Apprenticeship program.
 
+## How to Run
+```
+# from this directory
+# install
+yarn
+# run backend
+yarn dev
+
+# in another terminal session
+cd frontend
+yarn dev
+```
+
+
 ## medusa.js docs
 
 <p align="center">

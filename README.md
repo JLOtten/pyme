@@ -14,6 +14,65 @@ cd frontend
 yarn dev
 ```
 
+## First time setup
+
+Mostly follow directions here: https://docs.medusajs.com/development/backend/prepare-environment
+
+### Install medusa-cli
+
+```
+$ yarn global add @medusajs/medusa-cli
+# make sure medusa is on your path: see: https://docs.medusajs.com/development/backend/prepare-environment#troubleshooting-installation
+```
+
+### Setup .env
+
+node projects use .env files for environment variables, copy `.env.template` to `.env` and edit the values as needed
+
+```
+$ cp .env.template .env
+$ cp frontend/.env.template frontend/.env
+
+```
+
+### Setup database and data
+
+```
+# on mac
+$ brew install postgresql
+
+$ psql postgres
+psql (14.10)
+Type "help" for help.
+
+postgres=# create database medusa;
+CREATE DATABASE
+postgres=# \q
+
+# run migrations
+medusa migrations run
+
+# seed some fake data
+medusa seed -f data/seed.json
+```
+
+
+ ## How to Run
+ ```
+ # from this directory
+yarn
+# run backend
+yarn dev
+
+# admin page is http://localhost:7001, initial username/password is from seed.json
+# admin@medusa-test.com / supersecret
+
+# in another terminal session
+cd frontend
+yarn dev
+
+# frontend is http://localhost:8000
+```
 
 ## medusa.js docs
 

@@ -11,6 +11,7 @@ Mostly follow directions here: https://docs.medusajs.com/development/backend/pre
 yarn
 cd frontend
 yarn
+cd ..
 ```
 
 ### Setup .env
@@ -39,6 +40,12 @@ npx medusa migrations run
 
 # seed some fake data
 npx medusa seed -f data/seed.json
+
+# launch the backend
+yarn dev
+
+# wait for this message: ✔ Server is ready on port: 9000 – 12ms
+# kill the process with ctrl + C
 
 # run migrations again
 npx medusa migrations run

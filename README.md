@@ -5,11 +5,13 @@ A full-stack team collaboration project with the Develop Carolina Apprenticeship
 
 Mostly follow directions here: https://docs.medusajs.com/development/backend/prepare-environment
 
-### Install medusa-cli
-
+### Install Dependencies
 ```
-$ yarn global add @medusajs/medusa-cli
-# make sure medusa is on your path: see: https://docs.medusajs.com/development/backend/prepare-environment#troubleshooting-installation
+# In pyme folder
+yarn
+cd frontend
+yarn
+cd ..
 ```
 
 ### Setup .env
@@ -17,37 +19,41 @@ $ yarn global add @medusajs/medusa-cli
 node projects use .env files for environment variables, copy `.env.template` to `.env` and edit the values as needed
 
 ```
-$ cp .env.template .env
-$ cp frontend/.env.template frontend/.env
-
+cp .env.template .env
+cp frontend/.env.template frontend/.env
 ```
 
 ### Setup database and data
 
 ```
 # on mac
-$ brew install postgresql
+brew install postgresql
 
-$ psql postgres
-psql (14.10)
-Type "help" for help.
+psql postgres
 
-postgres=# create database medusa;
-CREATE DATABASE
-postgres=# \q
+# create database in postgres
+create database medusa;
+\q
 
 # run migrations
-medusa migrations run
+npx medusa migrations run
 
 # seed some fake data
-medusa seed -f data/seed.json
+npx medusa seed -f data/seed.json
+
+# launch the backend
+yarn dev
+
+# wait for this message: ✔ Server is ready on port: 9000 – 12ms
+# kill the process with ctrl + C
+
+# run migrations again
+npx medusa migrations run
 ```
 
 
  ## How to Run
  ```
- # from this directory install dependencies
-yarn
 # run backend
 yarn dev
 

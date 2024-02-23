@@ -46,10 +46,13 @@ medusa seed -f data/seed.json
 
  ## How to Run
  ```
- # from this directory
+ # from this directory install dependencies
 yarn
 # run backend
 yarn dev
+
+# in another terminal run admin
+yarn run admin
 
 # admin page is http://localhost:7001, initial username/password is from seed.json
 # admin@medusa-test.com / supersecret

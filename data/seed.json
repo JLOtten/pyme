@@ -139,11 +139,6 @@
   "products": [
     {
       "title": "Medusa T-Shirt",
-      "categories": [
-        {
-          "id": "pcat_shirts"
-        }
-      ],
       "subtitle": null,
       "description": "Reimagine the feeling of a classic T-shirt. With our cotton T-shirts, everyday essentials no longer have to be ordinary.",
       "handle": "t-shirt",
@@ -362,11 +357,6 @@
     },
     {
       "title": "Medusa Sweatshirt",
-      "categories": [
-        {
-          "id": "pcat_shirts"
-        }
-      ],
       "subtitle": null,
       "description": "Reimagine the feeling of a classic sweatshirt. With our cotton sweatshirt, everyday essentials no longer have to be ordinary.",
       "handle": "sweatshirt",
@@ -472,11 +462,6 @@
     },
     {
       "title": "Medusa Sweatpants",
-      "categories": [
-        {
-          "id": "pcat_pants"
-        }
-      ],
       "subtitle": null,
       "description": "Reimagine the feeling of classic sweatpants. With our cotton sweatpants, everyday essentials no longer have to be ordinary.",
       "handle": "sweatpants",
@@ -582,11 +567,6 @@
     },
     {
       "title": "Medusa Shorts",
-      "categories": [
-        {
-          "id": "pcat_merch"
-        }
-      ],
       "subtitle": null,
       "description": "Reimagine the feeling of classic shorts. With our cotton shorts, everyday essentials no longer have to be ordinary.",
       "handle": "shorts",
@@ -692,14 +672,6 @@
     },
     {
       "title": "Medusa Hoodie",
-      "categories": [
-        {
-          "id": "pcat_merch"
-        },
-        {
-          "id": "pcat_hidden_featured"
-        }
-      ],
       "subtitle": null,
       "description": "Reimagine the feeling of a classic hoodie. With our cotton hoodie, everyday essentials no longer have to be ordinary.",
       "handle": "hoodie",
@@ -805,14 +777,6 @@
     },
     {
       "title": "Medusa Longsleeve",
-      "categories": [
-        {
-          "id": "pcat_shirts"
-        },
-        {
-          "id": "pcat_hidden_featured"
-        }
-      ],
       "subtitle": null,
       "description": "Reimagine the feeling of a classic longsleeve. With our cotton longsleeve, everyday essentials no longer have to be ordinary.",
       "handle": "longsleeve",
@@ -918,14 +882,6 @@
     },
     {
       "title": "Medusa Coffee Mug",
-      "categories": [
-        {
-          "id": "pcat_merch"
-        },
-        {
-          "id": "pcat_hidden_featured"
-        }
-      ],
       "subtitle": null,
       "description": "Every programmer's best friend.",
       "handle": "coffee-mug",
@@ -964,43 +920,6 @@
           "manage_inventory": true
         }
       ]
-    }
-  ],
-  "categories": [
-    {
-      "id": "pcat_pants",
-      "name": "Pants",
-      "rank": 0,
-      "category_children": [],
-      "handle": "pants"
-    },
-    {
-      "id": "pcat_shirts",
-      "name": "Shirts",
-      "rank": 0,
-      "category_children": [],
-      "handle": "shirts"
-    },
-    {
-      "id": "pcat_merch",
-      "name": "Merch",
-      "rank": 0,
-      "category_children": [],
-      "handle": "merch"
-    },
-    {
-      "id": "pcat_hidden_carousel",
-      "name": "Hidden homepage carousel",
-      "rank": 0,
-      "category_children": [],
-      "handle": "hidden-homepage-carousel"
-    },
-    {
-      "id": "pcat_hidden_featured",
-      "name": "Hidden homepage featured",
-      "rank": 0,
-      "category_children": [],
-      "handle": "hidden-homepage-featured-items"
     }
   ]
 }
